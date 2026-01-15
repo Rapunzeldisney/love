@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Baby ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="card">
+            <header>
+                <h1 class="big-title">To My Dearest Baby</h1>
+                <p class="love-quote">"I love you more than every mile between us."</p>
+            </header>
+
+            <div class="polaroid-frame">
+                <img src="images/boy.JPG" alt="pookie" class="images">
+                <p class="handwritten">Hi, Pookieee ❤️</p>
+            </div>
+
+            <section class="message-area">
+                <h2 class="section-title">I Miss You More Than Words</h2>
+                <p1 class="letter-text">
+                    You are the first thing on my mind every single morning. 
+                </p1>
+                
+            </section>
+
+            <div class="button-box">
+                <button onclick="sendHug()" class="hug-btn">Click for a Hug! 🤗</button>
+            </div>
+
+            <footer>
+                <p class="footer-text">I love you to the moon and back.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function sendHug() {
+            for (let i = 0; i < 15; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart-pop');
+                heart.innerText = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 4000);
+            }
+            alert("Hug Sent! I love you idiot! ❤️");
+        }
+    </script>
+</body>
+</html>

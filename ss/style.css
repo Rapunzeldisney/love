@@ -1,0 +1,124 @@
+/* 1. Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 2. The Main Card */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px 30px;
+    border-radius: 40px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    max-width: 550px;
+    width: 90%;
+    text-align: center;
+    border: 8px solid #ffffff;
+}
+
+/* 3. Big Titles */
+.big-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem; /* Large and impactful */
+    color: #d81b60;
+    margin-bottom: 5px;
+}
+
+.love-quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-bottom: 30px;
+}
+
+/* 4. The Polaroid Style */
+.polaroid-frame {
+    background: white;
+    padding: 15px 15px 40px 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: rotate(-3deg);
+    margin: 20px auto;
+    width: 80%;
+    transition: 0.3s;
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid-frame img {
+    width: 250px;
+    height: 250px;      
+    object-fit: cover;  
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* 5. Message Styling */
+.section-title {
+    font-size: 1.8rem;
+    color: #ad1457;
+    margin-top: 40px;
+}
+
+.letter-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    padding: 0 20px;
+}
+
+/* 6. The Hug Button */
+.hug-btn {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.hug-btn:hover {
+    background: #d81b60;
+    transform: scale(1.1);
+}
+
+/* 7. Footer */
+.footer-text {
+    margin-top: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    color: #ff4081;
+}
+
+/* Heart Animation */
+.heart-pop {
+    position: fixed;
+    bottom: -10vh;
+    font-size: 2rem;
+    animation: moveUp linear forwards;
+    z-index: 100;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
